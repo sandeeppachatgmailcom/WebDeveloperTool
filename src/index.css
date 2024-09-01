@@ -1,8 +1,8 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 
 ::-webkit-scrollbar {
     display: none;
@@ -14,5 +14,5 @@
 }
   @keyframes rolling {
     from { transform: translateY(calc(-0vw + 0%)); }
-    to { transform: translateY(calc(-100vw + 100%)); } /* Adjust offset as needed */
+    to { transform: translateY(calc(-100vw + 100%)); }  
 }

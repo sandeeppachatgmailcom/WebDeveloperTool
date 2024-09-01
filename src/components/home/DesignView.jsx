@@ -11,11 +11,11 @@ const DesignView = ()=>{
       
     return(
         <div className="w-[100%] flex h-[100%]  ">
-            <div className="w-3/4 h-[100%] overflow-scroll   bg-yellow-100 bg-opacity-15">
+            <div className="w-3/4 h-[100%] overflow-scroll   bg-gray-700 bg-opacity-85">
                <div className="m-12 mb-0 border   overflow-scroll shadow-lg gap-4 flex flex-col justify-center items-center  ">
-                   {console.log(menu)}
+                   
                     {
-                        Object.keys(menu).map((item)=> menu[item] == true ?<div className="relative flex w-[90%] rounded h-screen   text-white p-1">{item.toUpperCase()}
+                        Object.keys(menu).map((item,index)=> menu[item] == true ?<div key={index} className="relative flex w-[90%] rounded h-screen   text-white p-1"> 
                          <div className="absolute h-[100%] w-full">
                          {sectionRender(item) } 
                          </div> 

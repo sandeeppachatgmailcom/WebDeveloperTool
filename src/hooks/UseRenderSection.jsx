@@ -10,10 +10,13 @@ import Social from "../components/home/sections/Social"
 
 
 const UseRenderSection= ()=>{
+  
+
      const handleSection = (item)=>{
-        if(item == 'intro') return <Intro/>
+      console.log(item,'item')
+      if(item == 'intro') return <Intro/>
         else if (item == 'products') return <Product/>
-        else if (item == 'service') return <Service/>
+        else if (item == 'services ') return <Service/>
         else if (item == 'appoinment') return <Appoinment/>
         else if (item == 'digital') return <DigitalProduct/>
         else if (item == 'about') return <About/>

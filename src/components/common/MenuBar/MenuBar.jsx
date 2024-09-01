@@ -22,7 +22,7 @@ const  MenuBar = ()=>{
             </div>:''}
             <div className="flex w-full justify-center">
             {
-               menuList.map((item)=> <div className={`border-t h-10 p-1 text-sm w-1/12  text-end  ${item.index<= menuIndex ? 'border-black':'border-gray-300' } `} >{item.name}</div>
+               menuList.map((item,index)=> <div key={index} className={`border-t h-10 p-1 text-sm w-1/12  text-end  ${item.index<= menuIndex ? 'border-black':'border-gray-300' } `} >{item.name}</div>
             )
             }
             

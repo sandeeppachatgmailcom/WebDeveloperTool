@@ -24,7 +24,7 @@ const SelectionPanel = ()=>{
             <h1 className="flex items-center justify-center text-start   text-xl w-[80%]  font-semibold h-20  ">{`Create your homepage`}</h1>
             <h1 className="flex items-center justify-center text-start w-[80%]      h-20">{`Build your homepage section-by-section, adding as many or as few sections as you need.`}</h1>
             {
-                Object.keys(menu).map((item)=> <div onClick={()=>handleSections(item)}  className="text-sm h-14 border-b  border-gray-400  w-[80%] flex cursor-pointer justify-start items-center    text-start">{menu[item]?<FaCheckCircle className="w-10" />:<CgRadioCheck className="w-10" />}   {item}</div> )
+                Object.keys(menu).map((item,index)=> <div key={index} onClick={()=>handleSections(item)}  className="text-sm h-14 border-b  border-gray-400  w-[80%] flex cursor-pointer justify-start items-center    text-start">{menu[item]?<FaCheckCircle className="w-10" />:<CgRadioCheck className="w-10" />}   {item}</div> )
             }
         </div>
     )
