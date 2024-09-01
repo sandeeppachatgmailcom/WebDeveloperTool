@@ -4,164 +4,164 @@ const colorSlice = createSlice({
     name: 'colorSlice',
     initialState: {
         colour: {
-            titleColour: 'zinc-100',
-            buttonColour: 'green-600',
-            bgColour: 'stone-200'
+            titleColour: 'text-zinc-100',
+            buttonColour: 'bg-green-600',
+            bgColour: 'bg-stone-200'
         },
         colourLibrary: {
             professional: [
                 {
-                    titleColour: 'zinc-900',
-                    buttonColour: 'zinc-300',
-                    bgColour: 'white'
+                    titleColour: 'text-zinc-900',
+                    buttonColour: 'bg-zinc-300',
+                    bgColour: 'bg-white'
                 },
                 {
-                    titleColour: 'zinc-100',
-                    buttonColour: 'green-600',
-                    bgColour: 'stone-200'
+                    titleColour: 'text-zinc-100',
+                    buttonColour: 'bg-green-600',
+                    bgColour: 'bg-stone-200'
                 },
                 {
-                    titleColour: 'zinc-800',
-                    buttonColour: 'slate-700',
-                    bgColour: 'neutral-200'
+                    titleColour: 'text-zinc-800',
+                    buttonColour: 'bg-slate-700',
+                    bgColour: 'bg-neutral-200'
                 },
                 {
-                    titleColour: 'sky-700',
-                    buttonColour: 'blue-300',
-                    bgColour: 'gray-200'
+                    titleColour: 'text-sky-700',
+                    buttonColour: 'bg-blue-300',
+                    bgColour: 'bg-gray-200'
                 }
 
             ],
             Playful: [
                 {
-                    titleColour: 'purple-300',
-                    buttonColour: 'red-500',
-                    bgColour: 'white'
+                    titleColour: 'text-purple-300',
+                    buttonColour: 'bg-red-500',
+                    bgColour: 'bg-white'
                 },
                 {
-                    titleColour: 'amber-400',
-                    buttonColour: 'blue-700',
-                    bgColour: 'white'
+                    titleColour: 'text-amber-400',
+                    buttonColour: 'bg-blue-700',
+                    bgColour: 'bg-white'
                 },
                 {
-                    titleColour: 'pink-300',
-                    buttonColour: 'blue-400',
-                    bgColour: 'white'
+                    titleColour: 'text-pink-300',
+                    buttonColour: 'bg-blue-400',
+                    bgColour: 'bg-white'
                 },
                 {
-                    titleColour: 'cyan-300',
-                    buttonColour: 'teal-500',
-                    bgColour: 'white'
+                    titleColour: 'text-cyan-300',
+                    buttonColour: 'bg-teal-500',
+                    bgColour: 'bg-white'
                 }
             ],
             Sophisticated: [
                 {
-                    titleColour: 'stone-300',
-                    buttonColour: 'stone-600',
-                    bgColour: 'white'
+                    titleColour: 'text-stone-300',
+                    buttonColour: 'bg-stone-600',
+                    bgColour: 'bg-white'
                 },
                 {
-                    titleColour: 'rose-300',
-                    buttonColour: 'emerald-700',
-                    bgColour: 'white'
+                    titleColour: 'text-rose-300',
+                    buttonColour: 'bg-emerald-700',
+                    bgColour: 'bg-white'
                 },
                 {
-                    titleColour: 'purple-100',
-                    buttonColour: 'stone-500',
-                    bgColour: 'white'
+                    titleColour: 'text-purple-100',
+                    buttonColour: 'bg-stone-500',
+                    bgColour: 'bg-white'
                 },
                 {
-                    titleColour: 'olive-500',
-                    buttonColour: 'stone-300',
-                    bgColour: 'white'
+                    titleColour: 'text-olive-500',
+                    buttonColour: 'bg-stone-300',
+                    bgColour: 'bg-white'
                 }
             ],
             Friendly: [
                 {
-                    titleColour: 'cyan-700',
-                    buttonColour: 'teal-800',
-                    bgColour: 'white'
+                    titleColour: 'text-cyan-700',
+                    buttonColour: 'bg-teal-800',
+                    bgColour: 'bg-white'
                 },
                 {
-                    titleColour: 'lime-400',
-                    buttonColour: 'green-300',
-                    bgColour: 'white'
+                    titleColour: 'text-lime-400',
+                    buttonColour: 'bg-green-300',
+                    bgColour: 'bg-white'
                 },
                 {
-                    titleColour: 'purple-300',
-                    buttonColour: 'blue-500',
-                    bgColour: 'white'
+                    titleColour: 'text-purple-300',
+                    buttonColour: 'bg-blue-500',
+                    bgColour: 'bg-white'
                 },
                 {
-                    titleColour: 'orange-300',
-                    buttonColour: 'red-500',
-                    bgColour: 'white'
+                    titleColour: 'text-orange-300',
+                    buttonColour: 'bg-red-500',
+                    bgColour: 'bg-white'
                 }
             ],
             Bold: [
                 {
-                    titleColour: 'orange-300',
-                    buttonColour: 'orange-600',
-                    bgColour: 'black'
+                    titleColour: 'text-orange-300',
+                    buttonColour: 'bg-orange-600',
+                    bgColour: 'bg-black'
                 },
                 {
-                    titleColour: 'gray-400',
-                    buttonColour: 'slate-600',
-                    bgColour: 'blue-700'
+                    titleColour: 'text-gray-400',
+                    buttonColour: 'bg-slate-600',
+                    bgColour: 'bg-blue-700'
                 },
                 {
-                    titleColour: 'rose-400',
-                    buttonColour: 'rose-800',
-                    bgColour: 'pink-300'
+                    titleColour: 'text-rose-400',
+                    buttonColour: 'bg-rose-800',
+                    bgColour: 'bg-pink-300'
                 },
                 {
-                    titleColour: 'white',
-                    buttonColour: 'violet-400',
-                    bgColour: 'gray-600'
+                    titleColour: 'text-white',
+                    buttonColour: 'bg-violet-400',
+                    bgColour: 'bg-gray-600'
                 }
             ],
             Quirky: [
                 {
-                    titleColour: 'lime-300',
-                    buttonColour: 'sky-100',
-                    bgColour: 'red-400'
+                    titleColour: 'text-lime-300',
+                    buttonColour: 'bg-sky-100',
+                    bgColour: 'bg-red-400'
                 },
                 {
-                    titleColour: 'yellow-300',
-                    buttonColour: 'pink-400',
-                    bgColour: 'purple-500'
+                    titleColour: 'text-yellow-300',
+                    buttonColour: 'bg-pink-400',
+                    bgColour: 'bg-purple-500'
                 },
                 {
-                    titleColour: 'gray-200',
-                    buttonColour: 'lime-300',
-                    bgColour: 'gray-500'
+                    titleColour: 'text-gray-200',
+                    buttonColour: 'bg-lime-300',
+                    bgColour: 'bg-gray-500'
                 },
                 {
-                    titleColour: 'yellow-400',
-                    buttonColour: 'red-500',
-                    bgColour: 'rose-700'
+                    titleColour: 'text-yellow-400',
+                    buttonColour: 'bg-red-500',
+                    bgColour: 'bg-rose-700'
                 }
             ],
             Innovative: [
                 {
-                    titleColour: 'gray-300',
-                    buttonColour: 'orange-600',
-                    bgColour: 'black'
+                    titleColour: 'text-gray-300',
+                    buttonColour: 'bg-orange-600',
+                    bgColour: 'bg-black'
                 },
                 {
-                    titleColour: 'stone-300',
-                    buttonColour: 'slate-500',
-                    bgColour: 'emerald-600'
+                    titleColour: 'text-stone-300',
+                    buttonColour: 'bg-slate-500',
+                    bgColour: 'bg-emerald-600'
                 },
                 {
-                    titleColour: 'white',
-                    buttonColour: 'yellow-500',
-                    bgColour: 'gray-600'
+                    titleColour: 'text-white',
+                    buttonColour: 'bg-yellow-500',
+                    bgColour: 'bg-gray-600'
                 },
                 {
-                    titleColour: 'slate-400',
-                    buttonColour: 'blue-500',
-                    bgColour: 'violet-600'
+                    titleColour: 'text-slate-400',
+                    buttonColour: 'bg-blue-500',
+                    bgColour: 'bg-violet-600'
                 }
             ]
 
