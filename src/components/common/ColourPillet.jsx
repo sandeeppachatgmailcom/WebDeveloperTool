@@ -3,8 +3,6 @@ import classNames from 'classnames';
 
 const ColourPillet = ({ color }) => {
     const [pattern, setPattern] = useState({});
-
-    // Using useLayoutEffect instead of useEffect
     useLayoutEffect(() => {
         console.log(`bg-${color.titleColour}`, `bg-${color.buttonColour}`, `bg-${color.bgColour}`);
         setPattern({

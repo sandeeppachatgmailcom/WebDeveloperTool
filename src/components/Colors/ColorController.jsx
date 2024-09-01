@@ -1,5 +1,5 @@
 import { useDispatch, useSelector } from "react-redux"
-import ColourPillet from "../common/colourPillet"
+import ColourPillet from "../common/ColourPillet"
 import { changeTheme } from "../../store/colorSlice"
 
 const ColorController = () => {
