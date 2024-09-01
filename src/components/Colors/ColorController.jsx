@@ -1,10 +1,13 @@
 import { useDispatch, useSelector } from "react-redux" 
 import { changeTheme } from "../../store/colorSlice"
 import ColourPilletn from "../common/ColourPilletn"
+import { useState } from "react"
 
 const ColorController = () => {
     const colorStore = useSelector((state) => state.colorpillet.colourLibrary)
     const dispatch = useDispatch()
+    const [select, setSelected] = useState(null)
+    const [selectedCategory,setSelectedCategory] = useState(null)
     const handlePilletColour = (pillet)=>{
         console.log(pillet,'color')
         dispatch(changeTheme(pillet))
@@ -23,7 +26,7 @@ const ColorController = () => {
                             <div className=" flex  h-10 w-full gap-2   justify-center items-center m-1">
 
                                 {
-                                    colorStore[category]?.map((pillet,index) => <div key={index} onClick={()=>handlePilletColour(pillet)} className=" h-6 w-24 border border-gray-400 border-opacity-10 cursor-pointer shadow-md   rounded-full" ><ColourPilletn color={pillet} />   </div>
+                                    colorStore[category]?.map((pillet,index) => <div key={index} onClick={()=>{handlePilletColour(pillet); setSelected(index);setSelectedCategory(indexCount)}} className={`${select==index && indexCount == selectedCategory?'border  border-gray-400 p-1  ':''} h-6 w-24 cursor-pointer shadow-md   rounded-full`} ><ColourPilletn color={pillet} />   </div>
                                     )
                                 }
                             </div>

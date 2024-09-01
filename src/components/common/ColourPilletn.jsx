@@ -14,10 +14,10 @@ const ColourPilletn = ({ color }) => {
    
 
   return (
-    <div className="flex w-full h-full rounded-full bg-red-800  overflow-hidden">
-       <div className={`w-4/12 ${pattern.titleColour } `} />
-       <div className={`w-4/12 ${pattern.buttonColour } `} />
-       <div className={`w-4/12 ${pattern.bgColour } `} />
+    <div onClick={()=>console.log(pattern,'pattern')} className="flex w-full h-full rounded-full overflow-hidden">
+       <div className={`w-4/12 border   ${pattern.titleColour } `} />
+       <div className={`w-4/12 border   ${pattern.buttonColour } `} />
+       <div className={`w-4/12 border   ${pattern.bgColour } `} />
     </div>
   );
 };
