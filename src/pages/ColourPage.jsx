@@ -1,17 +1,14 @@
 import { useSelector } from "react-redux"
-import SelectionPanel from "./SelectionPanel"
-import Intro from "./sections/Intro"
-import UseRenderSection from "../../hooks/UseRenderSection"
+import ColorController from "../components/Colors/ColorController"
+import UseRenderSection from "../hooks/UseRenderSection"
 
- 
-const DesignView = ()=>{
-
+const ColourPage = ()=>{
     const menu = useSelector((state)=>state.sections.activeSections)
     const sectionRender = UseRenderSection()
-      
-    return(
-        <div className="w-[100%] flex h-[100%]  ">
-            <div className="w-3/4 h-[100%] overflow-scroll   bg-yellow-100 bg-opacity-15">
+    
+    return (
+        <div className=" flex h-[100%] w-[100%]  ">
+             <div className="w-3/4 h-[100%] overflow-scroll   bg-yellow-100 bg-opacity-15">
                <div className="m-12 mb-0 border   overflow-scroll shadow-lg gap-4 flex flex-col justify-center items-center  ">
                    {console.log(menu)}
                     {
@@ -24,11 +21,11 @@ const DesignView = ()=>{
                     }
                </div> 
             </div>
-            <div className="w-1/4 h-[100%] border-s">
-                <SelectionPanel/>
+            <div className="flex w-1/4 ">
+                <ColorController/>
             </div>
         </div>
     )
 }
 
-export default DesignView
+export default ColourPage

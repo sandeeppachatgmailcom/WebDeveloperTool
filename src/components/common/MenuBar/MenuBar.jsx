@@ -6,29 +6,29 @@ const  MenuBar = ()=>{
     const dispatch = useDispatch()
     const menuList =useSelector((state)=>state.menubar.menulist)
     const [menuIndex,setMenuIndex] = useState(0)
-    const handleMenu = (value)=>{
+    const handleMenu = ()=>{
         dispatch(nextMenu(menuList[menuIndex]))
     }
     useEffect(()=>{
-        console.log(menuList[menuIndex],menuList.length,menuIndex )
+        handleMenu()
     },[menuIndex])
 
     return(
         
         <div className="w-[100%] h-[100%] flex justify-between items-center cursor-pointer ">
             {menuIndex>0 ?
-            <div onClick={()=>{setMenuIndex(menuIndex-1);handleMenu()}} className="flex w-1/12 border h-[60%] bg-black text-white items-center justify-start p-2">
+            <div onClick={()=>{setMenuIndex(menuIndex-1 ) }} className="flex w-1/12 border h-[60%] bg-black text-white items-center justify-start p-2">
                 BACK
             </div>:''}
             <div className="flex w-full justify-center">
             {
-               menuList.map((item)=> <div className={`border-t h-10 p-1 text-sm w-1/12  text-end  ${item.index< menuIndex ? 'border-black':'border-gray-300' } `} >{item.name}</div>
+               menuList.map((item)=> <div className={`border-t h-10 p-1 text-sm w-1/12  text-end  ${item.index<= menuIndex ? 'border-black':'border-gray-300' } `} >{item.name}</div>
             )
             }
             
             </div>
              {menuIndex <=menuList.length?
-             <div onClick={()=>{setMenuIndex(menuIndex+1);handleMenu()}} className="flex w-1/12 border h-[60%] bg-black text-white cursor-pointer items-center justify-end p-2">
+             <div onClick={()=>{setMenuIndex(menuIndex+1) }} className="flex w-1/12 border h-[60%] bg-black text-white cursor-pointer items-center justify-end p-2">
                 NEXT
             </div>:''}
         </div>
