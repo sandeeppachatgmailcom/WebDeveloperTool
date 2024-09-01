@@ -26,7 +26,7 @@ const ColorController = () => {
                             <div className=" flex  h-10 w-full gap-2   justify-center items-center m-1">
 
                                 {
-                                    colorStore[category]?.map((pillet,index) => <div key={index} onClick={()=>{handlePilletColour(pillet); setSelected(index);setSelectedCategory(indexCount)}} className={`${select==index && indexCount == selectedCategory?'border  border-gray-400 p-1  ':''} h-6 w-24 cursor-pointer shadow-md   rounded-full`} ><ColourPilletn color={pillet} />   </div>
+                                    colorStore[category]?.map((pillet,index) => <div key={index} onClick={()=>{handlePilletColour(pillet); setSelected(index);setSelectedCategory(indexCount)}} className={`${select==index && indexCount == selectedCategory?'border p-1 border-gray-400  ':''} h-6 w-24 cursor-pointer shadow-md   rounded-full`} ><ColourPilletn color={pillet} />   </div>
                                     )
                                 }
                             </div>

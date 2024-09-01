@@ -1,5 +1,5 @@
 import {   useLayoutEffect, useState } from "react";
-
+import { FaSquareFull } from "react-icons/fa";
 const ColourPilletn = ({ color }) => {
   const [pattern, setPattern] = useState({});
 
@@ -15,9 +15,9 @@ const ColourPilletn = ({ color }) => {
 
   return (
     <div onClick={()=>console.log(pattern,'pattern')} className="flex w-full h-full rounded-full overflow-hidden">
-       <div className={`w-4/12 border   ${color.titleColour } `} />
-       <div className={`w-4/12 border   ${color.buttonColour } `} />
-       <div className={`w-4/12 border   ${color.bgColour } `} />
+       <FaSquareFull className={`${color.titleColour } w-4/12  h-full`} /> 
+       <div className={`w-4/12       ${color.buttonColour } `} />
+       <div className={`w-4/12     ${color.bgColour } `} />
     </div>
   );
 };
