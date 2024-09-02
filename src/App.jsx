@@ -15,7 +15,7 @@ function App() {
       <div className='h-[10%] flex '>
         <Header />
       </div>
-      <div className='h-[75%] flex '>
+      <div className={`${isHomePage?' h-[100%]':'h-[75%]'}  flex `}>
         <Outlet />
       </div>
       {!isHomePage && (
