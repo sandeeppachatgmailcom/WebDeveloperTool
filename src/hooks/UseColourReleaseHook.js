@@ -7,9 +7,9 @@ const useColourReleaseHook = () => {
  
   useLayoutEffect(() => {
     const tempColour = {
-      textColour: `${theme.titleColour} `,
-      buttonColour: `${theme.buttonColour} `,
-      backGroundColour: `${theme.bgColour} `
+      textColour: `${theme.titleColour.text} `,
+      buttonColour: `${theme.buttonColour.bg} `,
+      backGroundColour: `${theme.bgColour.bg} `
     };
     setColour(tempColour);
     console.log(tempColour.textColour,'tempColour')
