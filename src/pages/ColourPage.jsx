@@ -1,28 +1,18 @@
 import { useSelector } from "react-redux"
 import ColorController from "../components/Colors/ColorController"
 import UseRenderSection from "../hooks/UseRenderSection"
+import DesignView from "../components/home/DesignView"
+import DesignScreen from "../components/common/DesignView"
 
-const ColourPage = ()=>{
-    const menu = useSelector((state)=>state.sections.activeSections)
-    const sectionRender = UseRenderSection()
-    
+const ColourPage = () => {
+
     return (
         <div className=" flex h-[100%] w-[100%]  ">
-             <div className="w-full h-[100%] overflow-scroll    ">
-               <div className="  mb-0     w-full shadow-lg gap-4 flex flex-col justify-center items-center  ">
-                  
-                    {
-                        Object.keys(menu).map((item,index)=> menu[item] == true ?<div key={index} className="relative flex w-[90%] rounded h-screen   text-white p-1">{item.toUpperCase()}
-                         <div className="absolute h-[100%] w-full">
-                         {sectionRender(item) } 
-                         </div> 
-                         
-                         </div>:''   ).sort()
-                    }
-               </div> 
+            <div className="w-full h-[100%] overflow-scroll    ">
+                <DesignScreen />
             </div>
             <div className="flex w-1/4 overflow-scroll ">
-                <ColorController/>
+                <ColorController />
             </div>
         </div>
     )

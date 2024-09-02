@@ -40,7 +40,7 @@ const EditTitleCard = ()=>{
              <div className="w-full flex   flex-wrap justify-center items-center">
                  
                 {
-                    Object.keys(fontFamily)?.map((item,index)=> <div key={index} onClick={()=>{setSelectedItem(item);handleChangeStyle(fontFamily[item])}} className={`flex-wrap text-wrap  text-sm justify-start text-center cursor-pointer items-center w-5/12   border h-10 m-2  ${item == selectedItem ?'bg-gray-200' :'' } p-1 `}>  {item.toUpperCase()} </div> )
+                    Object.keys(fontFamily)?.map((item,index)=> <div key={index} onClick={()=>{setSelectedItem(item);handleChangeStyle(fontFamily[item])}} className={`flex-nowrap overflow-hidden text-wrap  text-sm justify-start text-center cursor-pointer items-center w-5/12   border h-10 m-2  ${item == selectedItem ?'bg-gray-200' :'' } p-1 `}>  {item.toUpperCase()} </div> )
                 }
 
              </div>
