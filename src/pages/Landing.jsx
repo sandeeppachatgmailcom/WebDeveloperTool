@@ -1,6 +1,9 @@
 import { useSelector } from "react-redux"
 import { useNavigate } from "react-router-dom"
-
+import { FaPlus } from "react-icons/fa6";
+import { IoIosColorPalette } from "react-icons/io";
+import { RxBoxModel } from "react-icons/rx";
+import { LiaArrowRightSolid } from "react-icons/lia";
 const Landing = () => {
     const navigate = useNavigate()
     const activeUser = useSelector((state) => state.activeUser.name)
@@ -25,12 +28,21 @@ const Landing = () => {
                      A template that's unique to you. 
                 </div>
                 <div className="text-white gap-4 text-xl flex flex-col m-5 p-5">
-                <h1>* Design your homepage </h1>
-                <h1>* Add the pages you need</h1>
-                <h1>* Choose your colors & fonts</h1>
+                <div className="flex justify-start items-center gap-4 ">
+                    <RxBoxModel /> <h1>Design your homepage </h1>
                 </div>
-                <div onClick={handleStart} className="absolute w-3/6 h-[10%] bg-white border justify-start cursor-pointer items-center border-white bottom-32 start-10 flex  " >
-                    <h1 className="bg-white ps-4">Create WebSIte </h1>
+                <div className="flex justify-start items-center gap-4 ">
+                    <FaPlus /> <h1>Add the pages you need</h1>
+                </div>
+                <div className="flex justify-start items-center gap-4 ">
+                    <IoIosColorPalette /> <h1>Choose your colors & fonts</h1>
+                </div>
+                
+                
+                
+                </div>
+                <div onClick={handleStart} className="absolute w-3/6 h-[10%] bg-white border justify-start cursor-pointer gap-4 items-center border-white bottom-32 start-10 flex  " >
+                 <h1 className="bg-white ps-4">Create WebSIte </h1> <LiaArrowRightSolid className="w-8 h-8"/>
                 </div>
             </div>
         </div>
