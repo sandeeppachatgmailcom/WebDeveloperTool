@@ -13,10 +13,10 @@ const UseRenderSection= ()=>{
   
 
      const handleSection = (item)=>{
-      console.log(item,'item')
+      console.log(item,'item<<<<<<<<<<<<')
       if(item == 'intro') return <Intro/>
         else if (item == 'products') return <Product/>
-        else if (item == 'services ') return <Service/>
+        else if (item == 'services') return <Service/>
         else if (item == 'appoinment') return <Appoinment/>
         else if (item == 'digital') return <DigitalProduct/>
         else if (item == 'about') return <About/>

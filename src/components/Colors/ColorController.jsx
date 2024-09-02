@@ -17,7 +17,6 @@ const ColorController = () => {
 
     return (
         <div className="w-[100%] h-[100%]  border-s  border-opacity-45 flex flex-col ">
-
             {
                 Object.keys(colorStore).map((category,indexCount) => {
                     return (
