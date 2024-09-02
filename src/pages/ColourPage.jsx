@@ -21,7 +21,7 @@ const ColourPage = ()=>{
                     }
                </div> 
             </div>
-            <div className="flex w-1/4 ">
+            <div className="flex w-1/4 overflow-scroll ">
                 <ColorController/>
             </div>
         </div>
