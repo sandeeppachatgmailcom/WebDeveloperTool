@@ -19,26 +19,26 @@
 
  
     .motion-animation-down {
-      animation: movedown 20s infinite alternate;
+      animation: movedown 30s infinite alternate;
     }
     .motion-animation-up {
-        animation: moveup 20s infinite alternate;
+        animation: moveup 30s infinite alternate;
       }
   
     @keyframes movedown {
       0% {
-        transform: rotate(-45deg) translateY(100%);
+        transform: rotate(0deg) translateY(25%);
       }
       100% {
-        transform: rotate(-45deg) translateY(-100%);
+        transform: rotate(0deg) translateY(-25%);
       }
     }
     @keyframes moveup {
         0% {
-          transform: rotate(-45deg) translateY(-100%);
+          transform: rotate(0deg) translateY(-25%);
         }
         100% {
-          transform: rotate(-45deg) translateY(100%);
+          transform: rotate(0deg) translateY(25%);
         }
       }
  

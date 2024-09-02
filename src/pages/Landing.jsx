@@ -12,20 +12,12 @@ const Landing = () => {
 
     return (
         <div className="relative  w-full flex h-[100%]   " >
-            <div className=" w-full overflow-hidden lg:w-3/4 h-full border justify-between  flex   ">
-
-                <div style={{backgroundImage:`url('https://assets.squarespace.com/static-images/conversion/left-column-a54fc58e08.webp')`,backgroundSize:'cover',backgroundPosition:'center'}} className="w-4/12 text-9xl  h-screen border-white border-opacity-50 m-1 font-serif justify-center flex items-center -rotate-45 bg-gray-600 text-pink-500  motion-animation-down">
-                  
+            <div className="  w-full overflow-hidden lg:w-3/4 h-full border justify-start bg-black items-center flex   ">
+            <div className=" -rotate-45 w-[3500px] overflow-hidden  h-[2000px] bg-black  justify-between flex   ">
+                <div style={{backgroundImage:`url('https://assets.squarespace.com/static-images/conversion/left-column-a54fc58e08.webp')`,backgroundSize:'cover',backgroundPosition:'center'}} className="w-4/12 text-9xl  h-[2000px] border-white border-opacity-50 m-1 font-serif justify-center flex items-center  bg-gray-600 text-pink-500  motion-animation-down"> </div>
+                <div style={{backgroundImage:`url('https://assets.squarespace.com/static-images/conversion/middle-column-736c47e154.webp')`,backgroundSize:'cover',backgroundPosition:'center'}} className="w-4/12 text-9xl h-[2000px] border-white border-opacity-50 m-1 font-serif justify-center flex items-center   bg-gray-600 text-pink-500  motion-animation-up"> </div>
+                <div style={{backgroundImage:`url('https://assets.squarespace.com/static-images/conversion/right-column-26c862b8dd.webp')`,backgroundSize:'cover',backgroundPosition:'center'}} className="w-4/12 text-9xl h-[2000px] border-white border-opacity-50 m-1 font-serif justify-center flex items-center  bg-gray-600 text-pink-500  motion-animation-down"> </div>
                 </div>
-                <div style={{backgroundImage:`url('https://assets.squarespace.com/static-images/conversion/middle-column-736c47e154.webp')`,backgroundSize:'cover',backgroundPosition:'center'}} className="w-4/12 text-9xl h-screen border-white border-opacity-50 m-1 font-serif justify-center flex items-center -rotate-45  bg-gray-600 text-pink-500  motion-animation-up">
-                  
-                </div>
-                <div style={{backgroundImage:`url('https://assets.squarespace.com/static-images/conversion/right-column-26c862b8dd.webp')`,backgroundSize:'cover',backgroundPosition:'center'}} className="w-4/12 text-9xl h-screen border-white border-opacity-50 m-1 font-serif justify-center flex items-center -rotate-45 bg-gray-600 text-pink-500  motion-animation-down">
-                 
-                </div>
-                
-
-                
             </div>
             <div className=" w-full h-full absolute"></div>
             <div className="w-full bg-black lg:w-1/4 flex relative h-[100%] ">
