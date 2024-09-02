@@ -12,13 +12,31 @@ const Landing = () => {
 
     return (
         <div className="  w-full flex h-[100%]   " >
-            <div className="relative w-full overflow-hidden lg:w-3/4 h-full border justify-center flex-wrap   ">
-                
-                <div className=" w-full text-9xl h-[50%] border-8 border-white border-opacity-50 m-1 font-serif justify-center flex items-center bg-gray-600 text-orange-500 transform motion-animation-up">TEST  </div>
-                <div className=" w-full text-9xl h-[50%] border-8 border-white border-opacity-50 m-1 font-serif justify-center flex items-center  bg-gray-600 text-pink-500 transform motion-animation-down">BUILD   </div>
-                <div className=" w-full text-9xl h-[50%] border-8 border-white border-opacity-50 m-1 font-serif justify-center flex items-center  bg-gray-600 text-orange-500 transform motion-animation-up">FINISH   </div>
+            <div className="relative w-full overflow-hidden lg:w-3/4 h-full border justify-center flex  ">
 
+                <div className="w-4/12 text-9xl h-screen border-white border-opacity-50 m-1 font-serif justify-center flex items-center  bg-gray-600 text-pink-500  motion-animation-down">
+                 <img
+                        className="w-full h-screen object-cover"
+                        src="https://assets.squarespace.com/static-images/conversion/left-column-a54fc58e08.webp"
+                        alt="Description of image"
+                    />
+                </div>
+                <div className="w-4/12 text-9xl h-screen border-white border-opacity-50 m-1 font-serif justify-center flex items-center  bg-gray-600 text-pink-500  motion-animation-down">
+                 <img
+                        className="w-full h-screen object-cover"
+                        src="https://assets.squarespace.com/static-images/conversion/middle-column-736c47e154.webp"
+                        alt="Description of image"
+                    />
+                </div>
+                <div className="w-4/12 text-9xl h-screen border-white border-opacity-50 m-1 font-serif justify-center flex items-center  bg-gray-600 text-pink-500  motion-animation-down">
+                 <img
+                        className="w-full h-screen object-cover"
+                        src="https://assets.squarespace.com/static-images/conversion/right-column-26c862b8dd.webp"
+                        alt="Description of image"
+                    />
+                </div>
                 
+
                 <div className=" w-full h-full absolute"></div>
             </div>
             <div className="w-full bg-black lg:w-1/4 flex relative h-[100%] ">

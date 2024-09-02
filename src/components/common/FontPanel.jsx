@@ -14,7 +14,7 @@ function FontPanel() {
         </div>
         <div className='w-[100%]  flex  flex-wrap '>
         {
-            Object.keys(fonts).map((font,index)=><div onClick={()=>{dispatch(setFont(fonts[font]));console.log(fonts[font]);setSelectedIndex(index)}} className={`${index == selectedIndex ? 'border border-gray-800' :''} m-1 h-[70%]   cursor-pointer shadow-md  w-[45%]   p-1 flex flex-wrap justify-center items-center `}>
+            Object.keys(fonts).map((font,index)=><div onClick={()=>{dispatch(setFont(fonts[font]));console.log(fonts[font]);setSelectedIndex(index)}} className={`${index == selectedIndex ? 'border border-gray-800' :''} m-1 h-[70%] overflow-hidden  cursor-pointer shadow-md  w-[45%]   p-1 flex flex-wrap justify-center items-center `}>
                 <h1 className={`${fonts[font].font} text-sm p-1 `}>{font.toUpperCase()}</h1>
             </div> )
         }
