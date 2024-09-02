@@ -14,9 +14,9 @@ const Landing = () => {
         <div className="  w-full flex h-[100%]   " >
             <div className="relative w-full overflow-hidden lg:w-3/4 h-full border justify-center flex-wrap   ">
                 
-                <div className=" w-full text-9xl h-[50%] border-8 border-white border-opacity-50 m-1 font-serif justify-center flex items-center bg-gray-600 text-orange-500 transform motion-animation-up">TEST IT</div>
-                <div className=" w-full text-9xl h-[50%] border-8 border-white border-opacity-50 m-1 font-serif justify-center flex items-center  bg-gray-600 text-pink-500 transform motion-animation-down">BUILD IT </div>
-                <div className=" w-full text-9xl h-[50%] border-8 border-white border-opacity-50 m-1 font-serif justify-center flex items-center  bg-gray-600 text-orange-500 transform motion-animation-up">FINISH IT </div>
+                <div className=" w-full text-9xl h-[50%] border-8 border-white border-opacity-50 m-1 font-serif justify-center flex items-center bg-gray-600 text-orange-500 transform motion-animation-up">TEST  </div>
+                <div className=" w-full text-9xl h-[50%] border-8 border-white border-opacity-50 m-1 font-serif justify-center flex items-center  bg-gray-600 text-pink-500 transform motion-animation-down">BUILD   </div>
+                <div className=" w-full text-9xl h-[50%] border-8 border-white border-opacity-50 m-1 font-serif justify-center flex items-center  bg-gray-600 text-orange-500 transform motion-animation-up">FINISH   </div>
 
                 
                 <div className=" w-full h-full absolute"></div>
