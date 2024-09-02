@@ -11,15 +11,15 @@ function App() {
   const isHomePage = location.pathname === '/';
 
   return (
-    <div className='w-full h-screen'>
-      <div className='h-[10%]'>
+    <div className='w-full h-screen flex flex-col'>
+      <div className='h-[10%] flex '>
         <Header />
       </div>
-      <div className='h-[80%]'>
+      <div className='h-[75%] flex '>
         <Outlet />
       </div>
       {!isHomePage && (
-        <div className='h-[10%]'>
+        <div className='h-[15%] flex '>
           <MenuBar />
         </div>
       )}

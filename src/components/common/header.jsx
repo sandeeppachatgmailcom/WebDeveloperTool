@@ -1,6 +1,6 @@
 const Header = ()=>{
     return (
-        <div className="h[100%] border w-full">
+        <div className="h[100%]   w-full">
             
         </div>
     )
