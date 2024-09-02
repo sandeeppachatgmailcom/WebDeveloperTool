@@ -25,9 +25,9 @@ const  MenuBar = ()=>{
                menuList.map((item,index)=> <div key={index} className={`border-t h-10 p-1 text-sm w-1/12  text-end  ${item.index<= menuIndex ? 'border-black':'border-gray-300' } `} >{item.name}</div>
             )
             }
-            
+           
             </div>
-             {menuIndex <=menuList.length?
+             {menuIndex < menuList.length-1?
              <div onClick={()=>{setMenuIndex(menuIndex+1) }} className="flex w-1/12 border h-[60%] bg-black text-white cursor-pointer items-center justify-end p-2">
                 NEXT
             </div>:''}
