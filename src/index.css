@@ -27,18 +27,18 @@
   
     @keyframes movedown {
       0% {
-        transform: rotate(45deg) translateX(100%);
+        transform: rotate(-45deg) translateY(100%);
       }
       100% {
-        transform: rotate(45deg) translateX(-100%);
+        transform: rotate(-45deg) translateY(-100%);
       }
     }
     @keyframes moveup {
         0% {
-          transform: rotate(45deg) translateX(100%);
+          transform: rotate(-45deg) translateY(-100%);
         }
         100% {
-          transform: rotate(45deg) translateX(-100%);
+          transform: rotate(-45deg) translateY(100%);
         }
       }
  
