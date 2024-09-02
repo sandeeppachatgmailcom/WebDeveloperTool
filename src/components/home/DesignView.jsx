@@ -11,8 +11,8 @@ const DesignView = ()=>{
       
     return(
         <div className="w-[100%] flex h-[100%]  ">
-            <div className="w-3/4 h-[100%] overflow-scroll   bg-gray-700 bg-opacity-85">
-               <div className="m-12 mb-0 border   overflow-scroll shadow-lg gap-4 flex flex-col justify-center items-center  ">
+            <div className=" h-[100%] overflow-scroll w-full  ">
+               <div className="m-12 mb-0 border   shadow-lg gap-4 flex flex-col justify-center items-center w-full ">
                    
                     {
                         Object.keys(menu).map((item,index)=> menu[item] == true ?<div key={index} className="relative flex w-[90%] rounded h-screen   text-white p-1"> 
