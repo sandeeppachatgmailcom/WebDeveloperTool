@@ -20,7 +20,7 @@ const SelectionPanel = ()=>{
         dispatch(editSections(tempMenu))
     }
     return(
-        <div className="w-[100%] h-[100%] bg-white flex flex-col items-center justify-center overflow-scroll  ">
+        <div className="w-[100%] h-[100%] bg-white flex flex-col items-center justify-center overflow-scroll ">
             <h1 className="flex items-center justify-center text-start   text-xl w-[80%]  font-semibold h-20  ">{`Create your homepage`}</h1>
             <h1 className="flex items-center justify-center text-start w-[80%]      h-20">{`Build your homepage section-by-section, adding as many or as few sections as you need.`}</h1>
             {
