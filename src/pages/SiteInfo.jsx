@@ -7,11 +7,11 @@ const SiteInfo = ()=>{
     const font = useSelector((state)=>state.font.font)
 
     return(
-        <div className="  w-full h-[100%] flex ">
-            <div className={`w-3/4 h-[100%]   justify-center items-center ${font.font} `}>
+        <div className="  w-full h-[100%] flex flex-col  lg:flex-row  ">
+            <div className={`w-full lg:w-3/4 h-[100%]    justify-center items-center ${font.font} `}>
                 <TitleCard/>      
             </div>
-            <div className=" w-1/4 h-[100%]   overflow-scroll ">
+            <div className=" w-full lg:w-1/4 h-[100%]   overflow-scroll ">
                 <EditTitleCard/>
             </div>
              

@@ -15,7 +15,7 @@ const  MenuBar = ()=>{
 
     return(
         
-        <div className="w-[100%] h-[100%] flex justify-between items-center cursor-pointer p-1 ">
+        <div className="w-[100%]  h-[100%] flex justify-between items-center cursor-pointer p-1 ">
             {menuIndex>0 ?
             <div onClick={()=>{setMenuIndex(menuIndex-1 ) }} className="flex w-20  border h-[40%] hover:bg-gray-300 text-gray-800 items-center justify-center ms-4 p-2">
                 BACK

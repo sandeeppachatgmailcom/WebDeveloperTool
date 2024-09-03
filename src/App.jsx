@@ -12,13 +12,15 @@ function App() {
 
   return (
     <div className='w-full h-screen flex flex-col'>
-      <div className='h-[10%] flex '>
-        <Header />
-      </div>
+       {!isHomePage && (
+        <div className='h-[15%] flex '>
+            <Header />
+        </div>
+      )}
       <div className={`${isHomePage?' h-[100%]':'h-[75%]'}  flex `}>
         <Outlet />
       </div>
-      {!isHomePage && (
+        {!isHomePage && (
         <div className='h-[15%] flex '>
           <MenuBar />
         </div>

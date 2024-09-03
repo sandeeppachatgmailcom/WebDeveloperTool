@@ -7,7 +7,7 @@ function FontPanel() {
     const dispatch = useDispatch()
     const [selectedIndex,setSelectedIndex] = useState(0)
   return (
-    <div className='w-[100%] h-[100%] flex  flex-col  border-s gap-5 ps-1  overflow-scroll '>
+    <div className='w-[100%] h-[100%] flex  flex-col   justify-center border-s gap-5 ps-1  overflow-scroll '>
         <div className='w-full flex   flex-col     '>
             <h1 className='text-xl m-10 font-semibold '> Choose a font pairing</h1>
             <span className='text-sm m-3 '>These custom pairings were curated by our designers. There are other font options you can explore later.</span>
