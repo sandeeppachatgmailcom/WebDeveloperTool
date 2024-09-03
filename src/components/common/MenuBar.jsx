@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 import { useDispatch, useSelector } from "react-redux"
-import { nextMenu } from "../../../store/menuBar"
+import { nextMenu } from "../../store/menuBar"
 
 const  MenuBar = ()=>{
     const dispatch = useDispatch()

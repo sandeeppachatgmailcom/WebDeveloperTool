@@ -1,8 +1,8 @@
 import { Outlet, useLocation } from 'react-router-dom';
 import './App.css';
 // import Landing from './pages/Landing';
-import Header from './components/common/header';
-import MenuBar from './components/common/MenuBar/MenuBar';
+import Header from './components/common/header';  
+import MenuBar from './components/common/MenuBar';
 
 function App() {
   const location = useLocation();

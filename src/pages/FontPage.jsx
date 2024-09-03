@@ -1,5 +1,5 @@
 import FontPanel from "../components/common/FontPanel"
-import DesignScreen from "../components/common/DesignView"
+import DesignScreen from "../components/common/DesignScreen"
 
 const FontPage = ()=>{
         return (

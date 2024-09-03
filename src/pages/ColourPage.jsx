@@ -2,7 +2,7 @@ import { useSelector } from "react-redux"
 import ColorController from "../components/Colors/ColorController"
 import UseRenderSection from "../hooks/UseRenderSection"
 import DesignView from "../components/home/DesignView"
-import DesignScreen from "../components/common/DesignView"
+import DesignScreen from "../components/common/DesignScreen"
 
 const ColourPage = () => {
 

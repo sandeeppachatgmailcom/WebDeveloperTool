@@ -1,19 +1,21 @@
+ 
 import React, { useEffect, useLayoutEffect, useState } from 'react'
 import UseColourReleaseHook from '../../../hooks/UseColourReleaseHook'
+import GetTemplates from '../../common/GetTemplate'
+import { useSelector } from 'react-redux'
 
-function Appoinment() {
+
+function Appoinment({item,menu}) {
+  const designTemplate = useSelector((state)=>state.sections.activeSections.appoinment.templateId)
   const color = UseColourReleaseHook()
   const [image,setImage] = useState({})
-  useLayoutEffect(()=>{
-   setImage(color)
-  },[color])
+  const templates = GetTemplates(designTemplate)
+    
+
   return (
-    <div className={`${image.backGroundColour}   items-center flex-col w-[100%] h-[100%] justify-center flex`}> 
-      <h6 className={`  ${image.textColour} text-8xl`}>Appoinment </h6>
-      <button className={`h-10 w-20 border ${image.buttonColour} ${image.textColour} `}>
-        Click Me
-      </button>
-    </div>
+     <div className='w-full h-full flex flex-col'>
+         {templates}
+     </div>
   )
 }
 

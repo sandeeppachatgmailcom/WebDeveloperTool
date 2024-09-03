@@ -12,17 +12,17 @@ import Social from "../components/home/sections/Social"
 const UseRenderSection= ()=>{
   
 
-     const handleSection = (item)=>{
-      console.log(item,'item<<<<<<<<<<<<')
-      if(item == 'intro') return <Intro/>
-        else if (item == 'products') return <Product/>
-        else if (item == 'services') return <Service/>
-        else if (item == 'appoinment') return <Appoinment/>
-        else if (item == 'digital') return <DigitalProduct/>
-        else if (item == 'about') return <About/>
-        else if (item == 'social') return <Social/>
-        else if (item == 'forms') return <Forms/>
-        else if (item == 'footer') return <Footer/>
+     const handleSection = (item,menu)=>{
+     
+        if(item == 'intro')   return <Intro item = {item} menu={menu} />
+        else if (item == 'products') return <Product item = {item} menu={menu}/>
+        else if (item == 'services') return <Service item = {item} menu={menu}/>
+        else if (item == 'appoinment') return <Appoinment item = {item} menu={menu}/>
+        else if (item == 'digital') return <DigitalProduct item = {item} menu={menu}/>
+        else if (item == 'about') return <About item = {item} menu={menu}/>
+        else if (item == 'social') return <Social item = {item} menu={menu}/>
+        else if (item == 'forms') return <Forms item = {item} menu={menu}/>
+        else if (item == 'footer') return <Footer item = {item} menu={menu}/>
     } 
   return handleSection  
 }

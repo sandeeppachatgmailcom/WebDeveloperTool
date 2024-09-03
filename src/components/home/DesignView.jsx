@@ -1,5 +1,5 @@
 import SelectionPanel from "./SelectionPanel"
-import DesignScreen from "../common/DesignView"
+import DesignScreen from "../common/DesignScreen"
 
  
 const DesignView = ()=>{

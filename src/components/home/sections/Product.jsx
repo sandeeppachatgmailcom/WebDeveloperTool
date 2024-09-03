@@ -1,19 +1,28 @@
-import React, { useLayoutEffect, useState } from 'react'
-import useColourReleaseHook from '../../../hooks/UseColourReleaseHook'
+ 
+import React, { useEffect, useLayoutEffect, useState } from 'react'
+import UseColourReleaseHook from '../../../hooks/UseColourReleaseHook'
+import GetTemplates from '../../common/GetTemplate'
+import { useSelector } from 'react-redux'
 
-function Product() {
-  const color = useColourReleaseHook()
+
+function Product({item,menu}) {
+  const designTemplate = useSelector((state)=>state.sections.activeSections.products.templateId)
+  const color = UseColourReleaseHook()
   const [image,setImage] = useState({})
+  const templates = GetTemplates(designTemplate)
+   
   useLayoutEffect(()=>{
    setImage(color)
   },[color])
+  useEffect(()=>{
+    console.log(item,templates)
+    
+  },[])
+
   return (
-    <div className={`${image.backGroundColour}   items-center flex-col w-[100%] h-screen justify-center flex`}> 
-    <h6 className={`  ${image.textColour} text-8xl`}>Product </h6>
-    <button className={`h-10 w-20 border ${image.buttonColour} ${image.textColour} `}>
-      Click Me
-    </button>
-  </div>
+     <div className='w-full h-full flex flex-col'>
+         {templates}
+     </div>
   )
 }
 
